@@ -88,10 +88,23 @@ img {
   text-transform: capitalize;
 }
 
-.hidden-title {
-  opacity: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /* ----------------HEADER---------------- */
 
 .header {
@@ -202,8 +215,7 @@ img {
 
 /* ----------------ADVANTAGES---------------- */
 
-.advantages {
-  padding-top: 120px;
+.advantages.section {
   padding-bottom: 60px;
 }
 
@@ -233,9 +245,8 @@ img {
 
 /* ----------------ACTIVITY---------------- */
 
-.activity {
+.activity.section {
   padding-top: 60px;
-  padding-bottom: 120px;
 }
 
 .activity-list {
@@ -252,9 +263,6 @@ img {
 /* ----------------TEAM---------------- */
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-
   background-color: var(--light-color);
 }
 
@@ -379,11 +387,9 @@ img {
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: var(--accent-color);
-
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--accent-color);
-
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: var(--accent-color);
